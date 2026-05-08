@@ -3,7 +3,7 @@ body {
   background-color: #283149;
 }
 button {
-  padding: 2rem;
+  padding: 2.5rem;
   color: red;
   font-size: 3rem;
 }
@@ -24,25 +24,25 @@ footer {
 }
 
 .a {
-  background-image: url();
+  background-image: url(images/drum2.jpg);
 }
 
 .s {
-  background-image: url();
+  background-image: url(images/drum3.png);
 }
 
 .d {
-  background-image: url();
+  background-image: url(images/drum4.png);
 }
 
 .i {
-  background-image: url();
+  background-image: url(images/drum5.png);
 }
 
 .k {
-  background-image: url();
+  background-image: url(images/drum6.png);
 }
 
 .l {
-  background-image: url();
+  background-image: url(images/drum6.jpg);
 }
