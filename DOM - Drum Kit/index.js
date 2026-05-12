@@ -10,7 +10,7 @@ for (i = 0; i < numberOfDrumButtons; i++) {
   });
 }
 
-doucmuent.addEventListener("keypress", function (event) {
+document.addEventListener("keypress", function (event) {
   makeSound(event.key);
 
   buttonAnimation(event.key);
