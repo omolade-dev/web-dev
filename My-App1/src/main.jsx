@@ -5,6 +5,7 @@ import img2 from "./assets/IMG_8099.JPG";
 import img3 from "./assets/IMG_8100.JPG";
 import Heading from "./Heading";
 import List from "./List";
+import Button from "./Button";
 
 createRoot(document.getElementById("root")).render(
   <div>
@@ -16,5 +17,7 @@ createRoot(document.getElementById("root")).render(
       <img src={img2} alt="" />
       <img src={img3} alt="" />
     </div>
+
+    <Button />
   </div>,
 );
