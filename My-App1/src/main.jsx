@@ -3,19 +3,11 @@ import "./index.css";
 import img from "./assets/IMG_8098.JPG";
 import img2 from "./assets/IMG_8099.JPG";
 import img3 from "./assets/IMG_8100.JPG";
-
-const customStyle = {
-  color: "green",
-  fontSize: "20px",
-  border: "1px solid black",
-};
+import Heading from "./Heading";
 
 createRoot(document.getElementById("root")).render(
   <div>
-    <h1 style={customStyle} className="heading">
-      Favourite Food
-    </h1>
-
+    <Heading />
     <ul>
       <li>Noodles</li>
       <li>Bacon</li>
