@@ -2,18 +2,7 @@ import { createRoot } from "react-dom/client";
 import pic13 from "./assets/pic13.jpeg";
 import pic20 from "./assets/pic20.jpeg";
 import pic21 from "./assets/pic21.jpeg";
-
-function Card(props) {
-  console.log(props);
-  return (
-    <div>
-      <h2>{props.name}</h2>
-      <img src={props.img} alt="avatar_img" />
-      <p>{props.tel}</p>
-      <p>{props.email}</p>
-    </div>
-  );
-}
+import Card from "./Card";
 
 createRoot(document.getElementById("root")).render(
   <div>
