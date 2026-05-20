@@ -1,10 +1,12 @@
+import Avater from "./Avater";
+
 function Card(props) {
   return (
     <div>
       <div className="card">
         <div className="top">
           <h2 className="name">{props.name}</h2>
-          <img className="circle-img" src={props.img} alt="avatar_img" />
+          <Avater />
         </div>
         <div className="bottom">
           <p className="info">{props.tel}</p>
