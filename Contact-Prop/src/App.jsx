@@ -1,16 +1,32 @@
 import Card from "./components/Card";
-import pic17 from "./assets/pic17.jpeg";
+// import pic17 from "./assets/pic17.jpeg";
+// import pic2 from "../assets/pic2.jpeg";
+// import pic4 from "../assets/pic4.jpeg";
+
 import "./index.css";
+import contacts from "./components/Contact";
 
 function App() {
   return (
     <div>
       <h1>My Contacts</h1>
       <Card
-        name="Beyouce"
-        tel="+123 456 789"
-        email="b@beyonce.com"
-        img={pic17}
+        name={contacts[0].name}
+        tel={contacts[0].phone}
+        email={contacts[0].email}
+        img={contacts[0].imgURL}
+      />
+      <Card
+        name={contacts[1].name}
+        tel={contacts[1].phone}
+        email={contacts[1].email}
+        img={contacts[1].imgURL}
+      />
+      <Card
+        name={contacts[2].name}
+        tel={contacts[2].phone}
+        email={contacts[2].email}
+        img={contacts[2].imgURL}
       />
     </div>
   );
