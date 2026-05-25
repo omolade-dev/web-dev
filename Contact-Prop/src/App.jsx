@@ -1,16 +1,27 @@
 import Card from "./components/Card";
-// import pic17 from "./assets/pic17.jpeg";
-// import pic2 from "../assets/pic2.jpeg";
-// import pic4 from "../assets/pic4.jpeg";
-
 import "./index.css";
 import contacts from "./components/Contact";
+
+function createCard(contact) {
+  return (
+    <Card
+      key={contact.id}
+      id={contact.id}
+      name={contact.name}
+      img={contact.imgURL}
+      tel={contact.phone}
+      email={contact.email}
+    />
+  );
+}
 
 function App() {
   return (
     <div>
       <h1>My Contacts</h1>
-      <Card
+      {contacts.map(createCard)}
+
+      {/* <Card
         name={contacts[0].name}
         tel={contacts[0].phone}
         email={contacts[0].email}
@@ -27,7 +38,7 @@ function App() {
         tel={contacts[2].phone}
         email={contacts[2].email}
         img={contacts[2].imgURL}
-      />
+      /> */}
     </div>
   );
 }
