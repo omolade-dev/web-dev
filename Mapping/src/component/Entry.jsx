@@ -1,19 +1,16 @@
 function Entry(props) {
   return (
-    <dl className="dictionary">
+    <div>
       <div className="term">
         <dt>
           <span className="emoji" role="img" aria-label="Tense Biceps">
-            💪
+            {props.emoji}
           </span>
-          <span className="header">Tense Biceps</span>
+          <span className="header">{props.name}</span>
         </dt>
-        <dd className="text">
-          “You can do that!” or “I feel strong!” Arm with tense biceps. Also
-          used in connection with doing sports, e.g. at the gym.
-        </dd>
+        <dd className="text">{props.description}</dd>
       </div>
-      <div className="term">
+      {/* <div className="term">
         <dt>
           <span className="emoji" role="img" aria-label="Tense Biceps">
             🙏
@@ -38,8 +35,8 @@ function Entry(props) {
           is laughing boundlessly. The emoji version of “rofl“. Stands for
           „rolling on the floor, laughing“.
         </dd>
-      </div>
-    </dl>
+      </div> */}
+    </div>
   );
 }
 

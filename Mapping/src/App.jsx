@@ -8,12 +8,16 @@ function App() {
         <span>emojipedia</span>
       </h1>
 
-      <Entry
-        id={emojipedia[0].id}
-        emoji={emojipedia[0].emoji}
-        name={emojipedia[0].name}
-        meaning={emojipedia[0].meaning}
-      />
+      <dl className="dictionary">
+        <Entry
+          emoji="💪"
+          name="Tense Biceps"
+          description="“You can do that!” or “I feel strong!” Arm with tense biceps. Also
+          used in connection with doing sports, e.g. at the gym."
+        />
+        <Entry />
+        <Entry />
+      </dl>
     </div>
   );
 }
