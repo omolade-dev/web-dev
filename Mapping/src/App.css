@@ -1,0 +1,30 @@
+body {
+  background: rgb(200, 241, 228);
+  width: 800px;
+}
+
+h1 {
+  font-size: 50px;
+  border: 1px solid black;
+  padding: 4px;
+  padding: 9px;
+  color: white;
+  background: rgb(28, 131, 67);
+  text-align: center;
+}
+
+.term {
+  background: white;
+  padding: 25px;
+  margin-bottom: 6px;
+}
+
+.header {
+  font-size: 25px;
+  font-weight: 200;
+  color: rgb(28, 131, 67);
+}
+
+.emoji {
+  font-size: 35px;
+}
