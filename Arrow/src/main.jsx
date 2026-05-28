@@ -3,10 +3,15 @@ import App from "./App";
 
 var numbers = [3, 56, 2, 48, 5];
 
-const newNumbers = numbers.map((x) => x * x
-);
+// const newNumbers = numbers.map(x => x * x);
 
-console.log(newNumbers);
+// const newNumbers = numbers.map( x => x * 2 )
+
+ const newNumbers = numbers.filter(num => num < 10);
+
+ const newNumber = numbers.reduce(accumulator, currentNumber =>
+  accumulator + currentNumber);
+
 
 createRoot(document.getElementById("root")).render(
   <div>
