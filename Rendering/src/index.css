@@ -18,7 +18,6 @@ h1 {
 input {
   padding: 20px;
   border-radius: 5px;
-  border: 1px white solid;
   border: none;
   color: gray;
   background: rgb(2, 226, 152);
@@ -26,12 +25,12 @@ input {
   margin: auto;
   margin-top: 20px;
   text-align: center;
+  font-size: 500;
 }
 
 button {
   padding: 20px 93px;
   border-radius: 5px;
-  border: 1px white solid;
   border: none;
   color: green;
   background: white;
