@@ -1,4 +1,4 @@
-var isLoggedIn = true;
+var isLoggedIn = false;
 
 function renderConditionally() {
   if (isLoggedIn === true) {
