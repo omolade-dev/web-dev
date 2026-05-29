@@ -5,7 +5,8 @@ function Login() {
   return (
     <div>
       <form className="form">
-        <Input />
+        <Input type="text" placeholder="Username" />
+        <Input type="password" placeholder="Password" />
         <Button />
       </form>
     </div>

@@ -1,8 +1,7 @@
-function Input() {
+function Input(props) {
   return (
     <div>
-      <input type="text" placeholder="Username" />
-      <input type="password" placeholder="Password" />
+      <input type={props.type} placeholder={props.placeholder} />
     </div>
   );
 }
