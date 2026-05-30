@@ -1,7 +1,9 @@
 function Button() {
   return (
     <div>
-      <button type="submit">Login</button>
+      <button className="btn" type="submit">
+        Register
+      </button>
     </div>
   );
 }

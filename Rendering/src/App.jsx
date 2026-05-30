@@ -1,21 +1,10 @@
-import Login from "/components/Login";
+import Form from "/components/Form";
+import Login from "./components/Login";
 
-var isLoggedIn = true;
-
-const currentTime = new Date().getHours();
-
-console.log(currentTime);
+var userIsRegistered = false;
 
 function App() {
-  return (
-    <div className="container">
-      {
-        // isLoggedIn ? <h1>Hello</h1> : <Login />
-
-        currentTime < 12 ? <h1>Why are you still working?</h1> : null
-      }
-    </div>
-  );
+  return <div className="container">{userIsRegistered ? Form : Login}</div>;
 }
 
 export default App;
