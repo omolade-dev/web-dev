@@ -7,7 +7,7 @@ function Login() {
       <form className="form">
         <Input type="text" placeholder="Username" />
         <Input type="password" placeholder="Password" />
-        <Button />
+        <Button btn="Login" />
       </form>
     </div>
   );

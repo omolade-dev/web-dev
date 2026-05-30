@@ -1,10 +1,15 @@
-import Form from "/components/Form";
-import Login from "./components/Login";
+import Register from "/components/Register";
+// import Login from "/components/Login";
 
-var userIsRegistered = false;
+var userIsRegistered = true;
 
 function App() {
-  return <div className="container">{userIsRegistered ? Form : Login}</div>;
+  return (
+    <div className="container">
+      {" "}
+      <Register isRegistered={userIsRegistered} />
+    </div>
+  );
 }
 
 export default App;

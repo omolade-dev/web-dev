@@ -1,8 +1,8 @@
-function Button() {
+function Button(props) {
   return (
     <div>
       <button className="btn" type="submit">
-        Register
+        {props.btn}
       </button>
     </div>
   );
