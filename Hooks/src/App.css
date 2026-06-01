@@ -1,0 +1,20 @@
+body {
+  background: rgba(2, 53, 2, 0.685);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 100px;
+}
+
+button {
+  font-size: 50px;
+  padding: 10%;
+  border-radius: 10%;
+  border: none;
+  background: green;
+  color: white;
+}
