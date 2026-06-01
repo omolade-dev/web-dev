@@ -1,13 +1,11 @@
-import Register from "/components/Register";
-// import Login from "/components/Login";
+import Form from "/components/Form";
 
-var userIsRegistered = true;
+var userIsRegistered = false;
 
 function App() {
   return (
     <div className="container">
-      {" "}
-      <Register isRegistered={userIsRegistered} />
+      <Form isRegistered={userIsRegistered} />
     </div>
   );
 }
