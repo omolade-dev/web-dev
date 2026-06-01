@@ -4,9 +4,7 @@ import App from "./App";
 
 
 createRoot(document.getElementById("root")).render(
-  return (
-    <div>
-      <App />
-    </div>
-  )
-)
+  <div>
+    <App />
+  </div>
+);
