@@ -1,13 +1,14 @@
+import { useState } from "react";
+
 function App() {
-  var count = 0;
+  const [count, setCount] = useState(34223);
 
   function increase() {
-    count++;
-    console.log(count);
+    setCount(12);
   }
 
   return (
-    <div>
+    <div className="container">
       <h1>{count}</h1>
       <button onClick={increase}>+</button>
     </div>
