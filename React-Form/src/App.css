@@ -40,3 +40,8 @@ button {
   margin-top: 20px;
   color: rgb(13, 156, 113);
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}

@@ -2,19 +2,20 @@ import { useState } from "react";
 
 function App() {
   const [name, setName] = useState("");
-  const [headingText, setHeading] = "";
-  const [isMousedOver, setMouseOver] = useState(false);
+  const [headingText, setHeading] = useState("");
+  const [isMousedOver, setMousedOver] = useState(false);
 
   function handleClick() {
+    event.preventDefault();
     setHeading(name);
   }
 
   function handleMouseOver() {
-    setMouseOver(true);
+    setMousedOver(true);
   }
 
   function handleMouseOut() {
-    setMouseOver(false);
+    setMousedOver(false);
   }
 
   function handleChange(event) {
@@ -31,6 +32,7 @@ function App() {
           className="input"
           type="text"
           placeholder="What's your name?"
+          value={name}
         />
         <button
           style={{ backgroundColor: isMousedOver ? "black" : "white" }}
