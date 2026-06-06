@@ -1,6 +1,11 @@
+import { useState } from "react";
+
 function App() {
-  function handleChange() {
-    console.log("Changed");
+  const [name, setName] = useState("");
+
+  function handleChange(event) {
+    console.log(event.target.value);
+    setName(event.target.value);
   }
 
   return (
