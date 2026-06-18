@@ -1,19 +1,12 @@
 import { useState } from "react";
 
 function App() {
-  const [text, setText] = useState({
-    message: "",
-  });
+  const [text, setText] = useState("");
 
   function handleChange(event) {
-    const { name, value } = event.target;
+    const newValue = event.target.value;
 
-    setText((prevValue) => {
-      return {
-        ...prevValue,
-        [name]: value,
-      };
-    });
+    setText(newValue);
   }
 
   function updateText() {
@@ -27,12 +20,7 @@ function App() {
       </div>
 
       <div className="form">
-        <input
-          onChange={handleChange}
-          name="message"
-          value={text.message}
-          type="text"
-        />
+        <input onChange={handleChange} value={text} type="text" />
 
         <button onClick={updateText}>
           <span>Add</span>
