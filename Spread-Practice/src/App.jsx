@@ -1,13 +1,21 @@
-import React from "react";
+import { useState } from "react";
 
 function App() {
+  const [text, setText] = useState({
+    message: "",
+  });
+
+  function handleChange(event) {
+    const { name, value } = event.target;
+  }
+
   return (
     <div className="container">
       <div className="heading">
         <h1>To-Do List</h1>
       </div>
       <div className="form">
-        <input type="text" />
+        <input onChange={handleChange} value={text.message} type="text" />
         <button>
           <span>Add</span>
         </button>
