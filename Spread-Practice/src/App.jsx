@@ -2,16 +2,13 @@ import { useState } from "react";
 
 function App() {
   const [text, setText] = useState("");
+  const [items, setItems] = useState([]);
 
   function handleChange(event) {
     const newValue = event.target.value;
 
     setText(newValue);
   }
-
-  // function updateText() {
-  //   const {};
-  // }
 
   return (
     <div className="container">
@@ -28,7 +25,11 @@ function App() {
       </div>
       <div>
         <ul>
-          <li>A Item</li>
+          <li>
+            {items.map((todoitem) => (
+              <li>{todoitem}</li>
+            ))}
+          </li>
         </ul>
       </div>
     </div>
