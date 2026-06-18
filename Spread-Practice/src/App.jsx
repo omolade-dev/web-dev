@@ -10,6 +10,12 @@ function App() {
     setText(newValue);
   }
 
+  function addItem() {
+    setItems((prevValue) => {
+      return [...prevValue, text];
+    });
+  }
+
   return (
     <div className="container">
       <div className="heading">
@@ -19,17 +25,15 @@ function App() {
       <div className="form">
         <input onChange={handleChange} value={text} type="text" />
 
-        <button>
+        <button onClick={addItem}>
           <span>Add</span>
         </button>
       </div>
       <div>
         <ul>
-          <li>
-            {items.map((todoitem) => (
-              <li>{todoitem}</li>
-            ))}
-          </li>
+          {items.map((todoitem) => (
+            <li>{todoitem}</li>
+          ))}
         </ul>
       </div>
     </div>
