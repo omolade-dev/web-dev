@@ -7,19 +7,3 @@ createRoot(document.getElementById("root")).render(
     <App />
   </div>,
 );
-
-const citrus = ["Lime", "Lemon", "Orange"];
-const fruits = ["Apple", "Banana", "Coconut", ...citrus];
-
-const fullName = {
-  fName: "James",
-  lName: "Bond",
-};
-
-const user = {
-  ...fullName,
-  id: 1,
-  username: "Jamesbrown",
-};
-
-console.log(user);
