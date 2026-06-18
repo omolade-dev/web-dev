@@ -7,6 +7,17 @@ function App() {
 
   function handleChange(event) {
     const { name, value } = event.target;
+
+    setText((prevValue) => {
+      return {
+        ...prevValue,
+        [name]: value,
+      };
+    });
+  }
+
+  function updateText() {
+    const {};
   }
 
   return (
@@ -14,9 +25,16 @@ function App() {
       <div className="heading">
         <h1>To-Do List</h1>
       </div>
+
       <div className="form">
-        <input onChange={handleChange} value={text.message} type="text" />
-        <button>
+        <input
+          onChange={handleChange}
+          name="message"
+          value={text.message}
+          type="text"
+        />
+
+        <button onClick={updateText}>
           <span>Add</span>
         </button>
       </div>
