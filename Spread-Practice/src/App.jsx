@@ -9,9 +9,9 @@ function App() {
     setText(newValue);
   }
 
-  function updateText() {
-    const {};
-  }
+  // function updateText() {
+  //   const {};
+  // }
 
   return (
     <div className="container">
@@ -22,7 +22,7 @@ function App() {
       <div className="form">
         <input onChange={handleChange} value={text} type="text" />
 
-        <button onClick={updateText}>
+        <button>
           <span>Add</span>
         </button>
       </div>
