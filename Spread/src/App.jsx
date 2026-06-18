@@ -11,10 +11,7 @@ function App() {
     const { name, value } = event.target;
 
     setContact((prevValue) => {
-      return {
-        ...prevValue,
-        [name]: value,
-      };
+      return { ...prevValue, [name]: value };
     });
   }
 
