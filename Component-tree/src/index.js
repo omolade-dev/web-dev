@@ -15,9 +15,7 @@ ReactDOM.render(<App />, document.getElementById("root"));
 //Hint 1: You will need to think about how to manage the state of the input element
 //in InputArea.jsx.
 //Hint 2: You will need to think about how to pass the input value back into
-//the addItem() function in App.jsx.
-
-// If you're running this locally in VS Code use the commands:
+//the addItem()ning this locally in VS Code use the commands:
 // npm install
 // to install the node modules and
 // npm run dev
