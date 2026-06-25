@@ -9,7 +9,6 @@ function App() {
     setItems((prevItems) => {
       return [...prevItems, inputText];
     });
-    setInputText("");
   }
 
   function deleteItem(id) {
